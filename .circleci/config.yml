@@ -2,7 +2,7 @@ version: 2
 
 jobs:
   build:
-    working_directory: ~/core.typed.lang.jvm
+    working_directory: ~/NAME
     docker:
       - image: circleci/openjdk:8-jdk
     steps:

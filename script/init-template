@@ -1,0 +1,9 @@
+#!/bin/sh
+
+NAME="NAME"
+VERSION="VERSION"
+DESCRIPTION="DESCRIPTION"
+
+git grep -l NAME | xargs sed -i '' "s/NAME/$NAME/g"
+git grep -l VERSION | xargs sed -i '' "s/VERSION/$VERSION/g"
+git grep -l DESCRIPTION | xargs sed -i '' "s/DESCRIPTION/$DESCRIPTION/g"
